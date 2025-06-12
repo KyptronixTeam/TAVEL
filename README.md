@@ -157,11 +157,11 @@ The backend uses **Node.js** with **Express.js**, **MongoDB**, and **Stripe**. I
 - **Authentication**: JWT, optional Google OAuth.
 - **Payment**: Stripe API.
 - **Third-Party APIs**:
-  - Flight: Amadeus/Sabre.
-  - Hotel: Booking.com/Expedia.
-  - Car Rental: Rentalcars.com.
-  - eSIM: Airalo/Truphone.
-  - Event: Eventbrite/Ticketmaster.
+  - Flight: 
+  - Hotel: 
+  - Car Rental: 
+  - eSIM: 
+  - Event: 
 - **API Routes**:
   - `/auth`: Login, register, password reset.
   - `/flights`, `/hotels`, `/car-rentals`, `/esims`, `/events`: Search, details, book.
