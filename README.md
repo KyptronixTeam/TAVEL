@@ -1,6 +1,6 @@
 # All-in-One Travel Booking Solutions Website Documentation
 
-This document outlines the development plan for an All-in-One Travel Booking Solutions Website using **React.js** for the frontend and **Node.js** for the backend. The platform integrates flight booking, hotel booking, car rental, eSIM purchasing, and nightlife/event booking, all with direct booking capabilities (no third-party redirects) and Stripe for payments. The documentation covers features, user navigation, UI/UX design, backend implementation, admin panel, and development timelines.
+This document outlines the development plan for an All-in-One Travel Booking Solutions Website using **React.js** for the frontend and **Node.js** for the backend. The platform integrates flight booking, hotel booking, car rental, eSIM purchasing, and nightlife/event booking, all with direct booking capabilities (no third-party redirects) and Crypto for payments. The documentation covers features, user navigation, UI/UX design, backend implementation, admin panel, and development timelines.
 
 ---
 
@@ -33,19 +33,19 @@ The website provides five core features: **Flight Booking**, **Hotel Booking**, 
 ### 1.1 Features Overview
 1. **Flight Booking**:
    - Search real-time flight prices and availability based on departure city, arrival city, travel dates, return option, and number of passengers.
-   - Redirect to a flight details page to select a flight and checkout with Stripe (login/registration required).
+   - Redirect to a flight details page to select a flight and checkout with Crypto (login/registration required).
 2. **Hotel Booking**:
    - Search hotels based on location, check-in/check-out dates, and number of guests.
-   - Redirect to a hotel details page to select a hotel and checkout with Stripe (login/registration required).
+   - Redirect to a hotel details page to select a hotel and checkout with Crypto (login/registration required).
 3. **Car Rental**:
    - Search car rentals based on location, pickup/drop-off dates, and vehicle preferences.
-   - Redirect to a car rental details page to select a vehicle and checkout with Stripe (login/registration required).
+   - Redirect to a car rental details page to select a vehicle and checkout with Crypto (login/registration required).
 4. **eSIM Purchasing**:
    - Search eSIM packages based on country and duration of stay.
-   - Redirect to an eSIM details page to select a package and checkout with Stripe (login/registration required).
+   - Redirect to an eSIM details page to select a package and checkout with Crypto (login/registration required).
 5. **Nightlife/Event Booking**:
    - Search events or nightlife activities based on location and date.
-   - Redirect to an event details page to select an event and checkout with Stripe (login/registration required).
+   - Redirect to an event details page to select an event and checkout with Crypto (login/registration required).
 
 ### 1.2 User Navigation Flow
 - **Homepage**:
@@ -58,7 +58,7 @@ The website provides five core features: **Flight Booking**, **Hotel Booking**, 
   - Select an option and click "Book Now" to proceed to checkout.
 - **Checkout Page**:
   - Requires login/registration.
-  - Shows booking summary and Stripe payment form.
+  - Shows booking summary and Crypto payment form.
   - Post-payment: confirmation email and booking confirmation page.
 - **User Account**:
   - View booking history, manage profile, and cancel bookings (if allowed).
@@ -104,7 +104,7 @@ The frontend uses **React.js** with **Tailwind CSS** for a responsive, modern in
 #### 2.1.3 Checkout Page
 - **Components**:
   - **Booking Summary**: Item details (e.g., flight number, price).
-  - **Stripe Payment Form**: Card inputs via Stripe Elements.
+  - **Crypto Payment Form**: Crypto Selection and Proceed .
   - **Login Prompt**: For unauthenticated users.
   - **Confirm Button**: Submits payment.
 - **Design Notes**:
@@ -139,7 +139,7 @@ With 2-3 developers:
   - Week 2: Results list, API integration.
   - Week 3: Details modal, "Book Now".
 - **Checkout Page**: 1.5 weeks
-  - Week 1: Booking summary, Stripe Elements.
+  - Week 1: Booking summary, Crypto Elements.
   - Week 2 (half): Login prompt, confirmation.
 - **User Account Page**: 1 week
 - **Login/Registration Page**: 1 week
@@ -149,13 +149,13 @@ With 2-3 developers:
 
 ## 3. Backend Implementation (Node.js) and Timeline
 
-The backend uses **Node.js** with **Express.js**, **MongoDB**, and **Stripe**. It integrates third-party APIs and handles authentication, bookings, and payments.
+The backend uses **Node.js** with **Express.js**, **MongoDB**, and **Crypto**. It integrates third-party APIs and handles authentication, bookings, and payments.
 
 ### 3.1 Backend Architecture
 - **Framework**: Express.js (REST APIs).
 - **Database**: MongoDB (users, bookings, payments).
 - **Authentication**: JWT, optional Google OAuth.
-- **Payment**: Stripe API.
+- **Payment**: Coinbase Commerce API or Binance Pay.
 - **Third-Party APIs**:
   - Flight: 
   - Hotel: 
@@ -193,7 +193,7 @@ The backend uses **Node.js** with **Express.js**, **MongoDB**, and **Stripe**. I
 6. **User Management**:
    - Register/login, password reset, profile updates.
 7. **Payment Management**:
-   - Process Stripe payments, store records, send emails.
+   - Process Crypto payments, store records, send emails.
 
 ### 3.3 Backend Development Timeline
 With 2-3 developers:
@@ -249,8 +249,8 @@ The admin panel is a separate **React.js** app with **Tailwind CSS**, connecting
 ---
 
 ## 6. Technical Stack
-- **Frontend**: React.js, Tailwind CSS, Stripe Elements, Chart.js.
-- **Backend**: Node.js, Express.js, MongoDB, JWT, Stripe API.
+- **Frontend**: React.js, Tailwind CSS, Crypto Payment, Chart.js.
+- **Backend**: Node.js, Express.js, MongoDB, JWT, Coinbase Commerce API.
 - **Third-Party APIs**: Flight, Hotel, Car Rental, eSIM, Event, Google Places, Google OAuth.
 - **Deployment**: Vercel (frontend), Heroku/AWS (backend), MongoDB Atlas.
 
