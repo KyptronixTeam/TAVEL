@@ -255,18 +255,3 @@ The admin panel is a separate **React.js** app with **Tailwind CSS**, connecting
 - **Deployment**: Vercel (frontend), Heroku/AWS (backend), MongoDB Atlas.
 
 ---
-
-## 7. Assumptions
-- Third-party APIs are available and support direct booking.
-- Stripe is configured.
-- 2-3 developers work full-time.
-- No major requirement changes.
-
----
-
-## 8. Next Steps
-1. Finalize API contracts.
-2. Set up development environment.
-3. Create wireframes for UI/UX.
-4. Start parallel frontend/backend development.
-5. Test and iterate based on feedback.
